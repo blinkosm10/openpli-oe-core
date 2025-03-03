@@ -14,12 +14,10 @@ PKGV = "1+git${GITPKGV}"
 
 inherit setuptools3-openplugins
 
-RDEPENDS:${PN} = " \
+RDEPENDS_${PN} = " \
 	python3-core \
-	python3-codecs \
-	python3-json \
-	python3-netclient \
-	python3-email \
 	python3-datetime \
-	python3-threading \
+	python3-email \
+	python3-io \
+	python3-json \
 	"
