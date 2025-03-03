@@ -10,8 +10,8 @@ S = "${WORKDIR}/git"
 
 inherit gitpkgv pkgconfig scikit-build-core
 
-PV = "3.10.0.+git"
-PKGV = "3.10.0+git${GITPKGV}"
+PV = "3.12.2.+git"
+PKGV = "3.12.2+git${GITPKGV}"
 
 do_install:append() {
     rm -rf ${D}${PYTHON_SITEPACKAGES_DIR}/*.dist-info
