@@ -16,10 +16,8 @@ inherit distutils-openplugins
 
 RDEPENDS_${PN} = " \
 	${PYTHON_PN}-core \
-	${PYTHON_PN}-codecs \
-	${PYTHON_PN}-json \
-	${PYTHON_PN}-netclient \
-	${PYTHON_PN}-email \
 	${PYTHON_PN}-datetime \
-	${PYTHON_PN}-threading \
+	${PYTHON_PN}-email \
+	${PYTHON_PN}-io \
+	${PYTHON_PN}-json \
 	"
