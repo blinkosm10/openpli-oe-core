@@ -110,8 +110,6 @@ OPTIONAL_PACKAGES += " \
 	net-snmp \
 	net-tools \
 	\
-	${@bb.utils.contains('TARGET_ARCH', 'mipsel', '', 'nodejs', d)} \
-	\
 	phodav \
 	ntfs-3g \
 	openssh \
