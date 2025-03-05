@@ -11,19 +11,6 @@ index 67182cd6..e777e757 100644
  from Components.config import config
  from .utilities import lenient_force_utf_8, sanitise_filename_slashes, getUrlArg, toBinary
  
-diff --git a/plugin/controllers/models/info.py b/plugin/controllers/models/info.py
-index 500c0d46..ebb1dd8a 100644
---- a/plugin/controllers/models/info.py
-+++ b/plugin/controllers/models/info.py
-@@ -195,7 +195,7 @@ def getInfo(session=None, need_fullinfo=False):
- 	info["machinebuild"] = BoxInfo.getItem("model")
- 
- 	info["lcd"] = int(LCD)
--	info["grabpip"] = int(GRABPIP)
-+	info["grabpip"] = 1 # FIXME in enigma.info/Boxinfo
- 
- 	SH4266 = "SH4 @266MHz"
- 
 diff --git a/plugin/controllers/models/movies.py b/plugin/controllers/models/movies.py
 index 9e9fa78f..217aced2 100644
 --- a/plugin/controllers/models/movies.py

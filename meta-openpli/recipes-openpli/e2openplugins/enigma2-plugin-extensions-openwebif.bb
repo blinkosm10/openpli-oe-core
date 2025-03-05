@@ -31,7 +31,7 @@ require openplugins-distutils.inc
 SRC_URI = "git://github.com/oe-alliance/OpenWebif.git;protocol=https;branch=main \
            file://0001-revert-workaround-for-non-pli-streamproxy.patch \
            file://set-packages-explicit.patch \
-           file://fix-module-import-and-grabpip.patch \
+           file://fix-module-imports.patch \
            file://get-rid-of-six.patch \
 "
 
