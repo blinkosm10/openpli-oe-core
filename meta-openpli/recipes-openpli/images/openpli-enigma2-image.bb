@@ -80,6 +80,7 @@ IMAGE_INSTALL += " \
 	enigma2 \
 	fakelocale \
 	fuse-exfat \
+	hdparm \
 	kernel-params \
 	libavahi-client \
 	modutils-loadscript \
