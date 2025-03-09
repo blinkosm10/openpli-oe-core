@@ -13,6 +13,7 @@ RDEPENDS:${PN} = " \
 	mtd-utils \
 	mtd-utils-ubifs \
 	ofgwrite \
+	python3-compat2 \
 	${@bb.utils.contains("IMAGE_FSTYPES", "tar.bz2", "bzip2" , "", d)} \
 	"
 
