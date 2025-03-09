@@ -15,6 +15,7 @@ RDEPENDS:${PN} = " \
 	ofgwrite \
 	python3-compat2 \
 	${@bb.utils.contains("IMAGE_FSTYPES", "tar.bz2", "bzip2" , "", d)} \
+	${@bb.utils.contains("MACHINE", "dm8000", "dreambox-buildimage mtd-utils-jffs2" , "", d)} \
 	"
 
 S = "${WORKDIR}/git"
