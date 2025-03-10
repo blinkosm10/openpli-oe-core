@@ -20,7 +20,11 @@ do_install() {
     install -d ${D}${datadir}/enigma2
     install -d ${D}${datadir}/enigma2/hardware
 
-    if [ ${MACHINE} = "et6x00" ]; then
+    if [ ${MACHINE} = "h17" ]; then
+        install -m 0644 ${S}/boxes/zgemmah17combo.png ${D}${datadir}/enigma2/hardware/zgemmah17combo_front.png
+    elif [ ${MACHINE} = "lunix3-4k" ]; then
+        install -m 0644 ${S}/boxes/lunix34k.png ${D}${datadir}/enigma2/hardware/lunix34k_front.png
+    elif [ ${MACHINE} = "et6x00" ]; then
         install -m 0644 ${S}/boxes/et6x00.png ${D}${datadir}/enigma2/hardware/et6x00_front.png
         install -m 0644 ${S}/boxes/et6500.png ${D}${datadir}/enigma2/hardware/et6500_front.png
         install -m 0644 ${S}/png/et6500.png ${D}${datadir}/enigma2/hardware/et6500.png
