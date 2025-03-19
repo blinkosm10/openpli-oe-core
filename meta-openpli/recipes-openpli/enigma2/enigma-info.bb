@@ -80,7 +80,7 @@ RCHARDWARE ??= "N/A"
 
 STB_PLATFORM ?= "${MACHINE}"
 MACHINE_MODEL ?= "${MACHINE}"
-MEDIASERVICE ?= "${@bb.utils.contains("MACHINE_FEATURES", "himedia", "servicehisilicon" , "servicegstreamer", d)}"
+MEDIASERVICE ?= "${@bb.utils.contains("MACHINE_FEATURES", "himedia", "servicehisilicon" , "servicemp3", d)}"
 BLINDSCAN_BINARY ?= "blindscan"
 FORCE ?= "no"
 SUPPORT_DBOXLCD ?= "${@bb.utils.contains_any("MACHINE_FEATURES", "textlcd", "True", "False", d)}"
