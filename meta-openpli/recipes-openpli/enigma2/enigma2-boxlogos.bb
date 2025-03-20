@@ -4,11 +4,13 @@ HOMEPAGE = "https://github.com/DimitarCC/e2-boxlogos"
 require conf/license/license-gplv2.inc
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+DEPENDS = "enigma-info"
+
 ALLOW_EMPTY:${PN} = "1"
 
 inherit gitpkgv python3native
 
-PV = "1.0+gitr"
+PV = "1.0+gitr${SRCPV}"
 PKGV = "1.0+gitr${GITPKGV}"
 
 do_configure[nostamp] = "1"
@@ -21,14 +23,10 @@ FILES:${PN} = "${datadir}/enigma2/logos/ ${libdir}/enigma2/python/Components/Ren
 FILES:${PN}-src = "${libdir}/enigma2/python/Components/Renderer/*.py"
 
 do_install() {
-	# make sure the enigma info file exists
-	INFOFILE=${DEPLOY_DIR_IMAGE}/../../enigma-info/${MACHINE}.txt
-	if [ ! -f $INFOFILE ]; then
-		exit 1
-	fi
-
 	install -d ${D}${datadir}/enigma2/logos
 
+	# get OE-A compatible build info
+	INFOFILE=${DEPLOY_DIR_IMAGE}/../../enigma-info/${MACHINE}.txt
 	MACHINE_BRAND=$( cat $INFOFILE | grep "displaybrand=" | cut -d "=" -f 2- )
 	DISTRO_NAME=$( cat $INFOFILE | grep "distro=" | cut -d "=" -f 2- )
 
@@ -80,7 +78,7 @@ fi
 #
 INFOFILE=/usr/lib/enigma.info
 if [ ! -f $INFOFILE ]; then
-    exit 1
+    exit 0
 fi
 
 # get the machine brand name for this image

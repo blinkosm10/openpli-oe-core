@@ -88,7 +88,7 @@ IMAGE_INSTALL += " \
 	nfs-utils-client \
 	ofgwrite \
 	openpli-bootlogo \
-	openpli-boxlogos \
+	enigma2-boxlogos \
 	openresolv \
 	openssh-sftp-server \
 	opkg \
