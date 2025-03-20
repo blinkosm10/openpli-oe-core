@@ -67,6 +67,7 @@ IMAGE_INSTALL += " \
 	3rd-party-feed-configs \
 	aio-grab \
 	avahi-daemon \
+	boximages-owif \
 	busybox-cron \
 	ca-certificates \
 	chrony \
