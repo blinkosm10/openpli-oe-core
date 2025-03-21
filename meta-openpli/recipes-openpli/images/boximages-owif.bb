@@ -1,7 +1,7 @@
 DESCRIPTION = "OE-Alliance remote control and box image files for Enimga2 and OpenWebIF."
 MAINTAINER = "OE-Alliance"
 require conf/license/license-gplv2.inc
-PACKAGE_ARCH = "${MACHINE}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit gitpkgv
 
