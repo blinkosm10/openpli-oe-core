@@ -9,10 +9,8 @@ DEPENDS = "ninja-native cmake-native python3-scikit-build-core-native"
 
 PYPI_PACKAGE = "levenshtein"
 
-SRC_URI[md5sum] = "aebd196b9cd79e1715027bc7ff612eb9"
-SRC_URI[sha256sum] = "0d19ba22330d50609b2349021ec3cf7d905c6fe21195a2d0d876a146e7ed2575"
-
-SRC_URI:append = " file://fix-pyproject-toml-metadata.patch"
+SRC_URI[md5sum] = "3f10add315701638918d8039ff8dfe44"
+SRC_URI[sha256sum] = "3e18b73564cfc846eec94dd13fab6cb006b5d2e0cc56bad1fd7d5585881302e3"
 
 S = "${WORKDIR}/python-levenshtein-${PV}"
 
