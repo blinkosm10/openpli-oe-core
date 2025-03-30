@@ -79,6 +79,7 @@ IMAGE_INSTALL += " \
 	e2fsprogs-mke2fs \
 	e2fsprogs-tune2fs \
 	enigma2 \
+	enigma2-plugin-skins-e2darkos \
 	fakelocale \
 	fuse-exfat \
 	hdparm \

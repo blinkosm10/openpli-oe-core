@@ -35,7 +35,7 @@ RDEPENDS:${PN}:append:libc-glibc = " \
 	"
 
 RRECOMMENDS:${PN} = " \
-	enigma2-plugin-skins-pli-hd \
+	enigma2-plugin-skins-e2darkos \
 	hotplug-e2-helper \
 	python3-sendfile \
 	ofgwrite \
