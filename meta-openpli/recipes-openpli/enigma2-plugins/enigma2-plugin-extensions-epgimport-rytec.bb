@@ -5,7 +5,7 @@ require conf/license/openpli-gplv2.inc
 
 inherit allarch
 
-PV = "20250325"
+PV = "20250407"
 SRC_URI = "http://rytecepg.wanwizard.eu/rytec.sources.xml.${PV}.gz"
 S = "${WORKDIR}"
 
@@ -21,4 +21,4 @@ do_install() {
 	install -m 644 ${S}/rytec.sources.xml.${PV} ${D}${sysconfdir}/epgimport/rytec.sources.xml
 }
 
-SRC_URI[sha256sum] = "984f1f6635865667cea7c92dbf7ffd231025dca240818fbaf81e51bff2ffc552"
+SRC_URI[sha256sum] = "476e8d8ec8e234f6cd460ac40334faf374d4afe5ff1a9d56d814927a33bceaf5"
