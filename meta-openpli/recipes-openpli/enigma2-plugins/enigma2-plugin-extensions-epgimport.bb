@@ -19,7 +19,7 @@ S = "${WORKDIR}/git/src"
 inherit setuptools3-openplugins
 
 RDEPENDS:${PN} = "python3-compression python3-shell python3-pkgutil"
-RRECOMMENDS:${PN} = "${PN}-rytec"
+RRECOMMENDS:${PN} = "${PN}-sources"
 PACKAGES = "${PN}-dbg ${PN} ${PN}-src"
 
 RREPLACES:${PN} = "enigma2-plugin-extensions-xmltvimport"
