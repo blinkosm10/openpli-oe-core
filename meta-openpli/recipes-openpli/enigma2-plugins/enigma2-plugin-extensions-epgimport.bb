@@ -18,7 +18,7 @@ inherit distutils-openplugins
 
 DEPENDS = "${PYTHON_PN}"
 RDEPENDS_${PN} = "${PYTHON_PN}-compression ${PYTHON_PN}-shell ${PYTHON_PN}-pkgutil"
-RRECOMMENDS_${PN} = "${PN}-rytec"
+RRECOMMENDS_${PN} = "${PN}-sources"
 PACKAGES = "${PN}-dbg ${PN} ${PN}-src"
 
 RREPLACES_${PN} = "enigma2-plugin-extensions-xmltvimport"
