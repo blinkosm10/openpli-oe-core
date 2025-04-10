@@ -28,4 +28,5 @@ do_install() {
 	install -m 644 ${S}/rytec.sources.xml ${D}${sysconfdir}/epgimport/rytec.sources.xml
 	install -m 644 ${S}/turkish.sources.xml ${D}${sysconfdir}/epgimport/turkish.sources.xml
 	install -m 644 ${S}/spainKoala.sources.xml ${D}${sysconfdir}/epgimport/spainKoala.sources.xml
+	install -m 644 ${S}/polandAzman.sources.xml ${D}${sysconfdir}/epgimport/polandAzman.sources.xml
 }
