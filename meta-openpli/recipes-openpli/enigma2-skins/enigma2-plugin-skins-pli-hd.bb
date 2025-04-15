@@ -17,8 +17,8 @@ S = "${WORKDIR}/git"
 do_compile[noexec] = "1"
 
 do_install() {
-	rm -f ${S}${datadir}/enigma2/PLi-FullHD
-	rm -f ${S}${datadir}/enigma2/PLi-FullNightHD
+	rm -rf ${S}${datadir}/enigma2/PLi-FullHD
+	rm -rf ${S}${datadir}/enigma2/PLi-FullNightHD
 	install -d ${D}${datadir}
 	cp -r ${S}${datadir}/* ${D}${datadir}/
 	chmod -R a+rX ${D}${datadir}/enigma2/
