@@ -1,7 +1,7 @@
-DESCRIPTION = "PLi-HD skins"
+DESCRIPTION = "PLi-FullHD and PLi-FullnightHD skins"
 MAINTAINER = "littlesat"
 LICENSE = "Proprietary"
-LIC_FILES_CHKSUM = "file://usr/share/enigma2/PLi-HD/skin.xml;beginline=3;endline=8;md5=1d560d35b9194281a488eb3a32d9c8bf"
+LIC_FILES_CHKSUM = "file://usr/share/enigma2/PLi-FullNightHD/skin.xml;beginline=3;endline=8;md5=1d560d35b9194281a488eb3a32d9c8bf"
 
 inherit gitpkgv allarch
 
@@ -17,8 +17,9 @@ S = "${WORKDIR}/git"
 do_compile[noexec] = "1"
 
 do_install() {
-	rm -f ${S}${datadir}/enigma2/PLi-FullHD
-	rm -f ${S}${datadir}/enigma2/PLi-FullNightHD
+	rm -rf ${S}${datadir}/enigma2/PLi-HD
+	rm -rf ${S}${datadir}/enigma2/PLi-HD1
+	rm -rf ${S}${datadir}/enigma2/PLi-HD2
 	install -d ${D}${datadir}
 	cp -r ${S}${datadir}/* ${D}${datadir}/
 	chmod -R a+rX ${D}${datadir}/enigma2/
