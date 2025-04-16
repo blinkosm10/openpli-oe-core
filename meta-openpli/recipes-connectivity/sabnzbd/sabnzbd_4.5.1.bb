@@ -3,16 +3,18 @@ DESCRIPTION = "SABnzbd is an Open Source Binary Newsreader written in Python."
 HOMEPAGE = "https://sabnzbd.org"
 MAINTAINER = "team@sabnzbd.org"
 LICENSE = "GPL-2.0-or-later"
-LIC_FILES_CHKSUM = "file://COPYRIGHT.txt;md5=dc94785ad7ae0960293331f807d14628"
+LIC_FILES_CHKSUM = "file://COPYRIGHT.txt;md5=696e8c6166d0824d6e7c0554d03301db"
 
 DEPENDS = "python3"
 RDEPENDS:${PN} = "\
-    python3-cheetah python3-compression python3-core python3-crypt python3-ctypes python3-email python3-html \
-    python3-misc python3-multiprocessing python3-sqlite3 python3-shell python3-sabyenc3 python3-configobj \
-    python3-cryptography python3-feedparser python3-cheroot python3-cherrypy python3-portend python3-chardet \
-    python3-notify2 python3-puremagic python3-guessit python3-sgmllib3k python3-more-itertools python3-modules \
-    python3-sabctools python3-rebulk python3-dateutil python3-babelfish python3-pysocks python3-pip p7zip \
-    "
+	python3-cheetah python3-compression python3-core python3-crypt python3-ctypes python3-email python3-html \
+	python3-misc python3-multiprocessing python3-sqlite3 python3-shell python3-sabyenc3 python3-configobj \
+	python3-cryptography python3-feedparser python3-cheroot python3-cherrypy python3-portend python3-chardet \
+	python3-notify2 python3-puremagic python3-guessit python3-sgmllib3k python3-more-itertools python3-modules \
+	python3-sabctools python3-rebulk python3-dateutil python3-babelfish python3-pysocks python3-pip python3-jaraco.context p7zip \
+	python3-jaraco.functools python3-jaraco.collections python3-jaraco.text python3-jaraco.classes python3-apprise \
+	python3-pytz python3-tempora python3-zc.lockfile python3-six python3-pycparser python3-cffi python3-ct3 \
+	"
 
 RRECOMMENDS:${PN} = "par2cmdline unrar"
 
@@ -22,8 +24,8 @@ SRC_URI = "https://github.com/sabnzbd/sabnzbd/releases/download/${PV}/SABnzbd-${
 	file://init-functions \
 	"
 
-SRC_URI[md5sum] = "4e607b5a187d6081037e71cc1cafef34"
-SRC_URI[sha256sum] = "a9ebf273d77c6d3cc9a13b1bd1640b903f4891e58aee3ef5a25595db3aa4d7fb"
+SRC_URI[md5sum] = "842b3b3b598a89987a3ce173ea9b7607"
+SRC_URI[sha256sum] = "fa1ec07a20769bcd863099cc40e8f20a336221505137bb1b52d981506333fc1c"
 
 S = "${WORKDIR}/SABnzbd-${PV}"
 
