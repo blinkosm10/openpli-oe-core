@@ -88,7 +88,7 @@ IMAGE_INSTALL += " \
 	modutils-loadscript \
 	nfs-utils \
 	nfs-utils-client \
-	ofgwrite \
+	${@bb.utils.contains("MACHINE", "dm8000", "", "ofgwrite", d)} \
 	openpli-bootlogo \
 	enigma2-boxlogos \
 	openresolv \
