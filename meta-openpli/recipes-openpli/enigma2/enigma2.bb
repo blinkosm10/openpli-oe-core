@@ -130,6 +130,8 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit autotools pkgconfig
 
+TARGET_CFLAGS += "-DGLIBC_64BIT_TIME_FLAGS"
+
 PKGV:enigma2-fonts = "2020.10.17"
 
 def get_crashaddr(d):
