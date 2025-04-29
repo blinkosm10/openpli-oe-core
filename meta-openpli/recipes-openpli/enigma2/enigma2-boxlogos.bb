@@ -66,12 +66,16 @@ do_install() {
 
 	if [ -f "${S}/box/${MACHINE}.svg" ] ; then
 		install -m 0644 "${S}/box/${MACHINE}.svg" ${D}${datadir}/enigma2/logos/boxlogo.svg
+	fi
 	if [ -f "${S}/box/${MACHINE}.png" ] ; then
 		install -m 0644 "${S}/box/${MACHINE}.png" ${D}${datadir}/enigma2/logos/boxlogo.png
+	fi
 	if [ -f "${S}/box/${MACHINE}_large.png" ] ; then
 		install -m 0644 "${S}/box/${MACHINE}_large.png" ${D}${datadir}/enigma2/logos/boxlogo_large.png
+	fi
 	if [ -f "${S}/box/${MACHINE}_medium.png" ] ; then
 		install -m 0644 "${S}/box/${MACHINE}_medium.png" ${D}${datadir}/enigma2/logos/boxlogo_medium.png
+	fi
 	if [ "${MACHINE}" = "h10" ]; then
 		cp ${S}/box/zgemmah10*.svg ${D}${datadir}/enigma2/logos/ || true
 		cp ${S}/box/zgemmah10*.png ${D}${datadir}/enigma2/logos/ || true
