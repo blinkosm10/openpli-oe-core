@@ -8,7 +8,9 @@ do_install_append() {
 	rm ${D}${sysconfdir}/init.d/vsftpd
 	rm ${D}${sysconfdir}/vsftpd.ftpusers
 	rm ${D}${sysconfdir}/vsftpd.user_list
+}
 
+pkg_postinst_${PN}_append () {
 	# fix fakeroot issues on some boxes
 	chown root:root ${D}${sysconfdir}/vsftpd.conf
 }
