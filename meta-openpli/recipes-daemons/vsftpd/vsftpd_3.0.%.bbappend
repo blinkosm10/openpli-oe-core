@@ -12,5 +12,5 @@ do_install_append() {
 
 pkg_postinst_${PN}_append () {
 	# fix fakeroot issues on some boxes
-	chown root:root ${D}${sysconfdir}/vsftpd.conf
+	chown root:root $D${sysconfdir}/vsftpd.conf
 }
