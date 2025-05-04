@@ -6,3 +6,5 @@ SRC_URI[sha256sum] = "a86b51c8454a813120848c803421f327d8c07aabcae461e0597cc49398
 
 PACKAGECONFIG[amrnb]    = ""
 PACKAGECONFIG[amrwb]    = ""
+
+LDFLAGS:append:mipsarch = " -latomic"

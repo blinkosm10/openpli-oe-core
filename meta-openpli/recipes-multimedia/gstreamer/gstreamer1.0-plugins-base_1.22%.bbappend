@@ -22,3 +22,5 @@ SRC_URI:remove = "file://0004-vorbisdec-Set-at-most-64-channels-to-NONE-position
 "
 
 PACKAGECONFIG = "${GSTREAMER_ORC} alsa jpeg ogg opus pango png theora vorbis"
+
+LDFLAGS:append:mipsarch = " -latomic"

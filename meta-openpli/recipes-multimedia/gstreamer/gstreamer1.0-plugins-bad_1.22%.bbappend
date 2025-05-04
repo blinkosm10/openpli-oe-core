@@ -13,3 +13,5 @@ PACKAGECONFIG = "${GSTREAMER_ORC} bz2 closedcaption curl dash dtls faac faad hls
 "
 
 EXTRA_OEMESON:remove = "-Dkate=disabled"
+
+LDFLAGS:append:mipsarch = " -latomic"
