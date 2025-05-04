@@ -6,3 +6,5 @@ SRC_URI[sha256sum] = "1b2ee4028010c25b776effa7c396c7e3e1861b60b9417e416f4914abcd
 
 SRC_URI:append = " file://001-revert-use-new-gst-adapter-get-buffer.patch"
 SRC_URI:remove = "file://0005-allocator-Avoid-integer-overflow-when-allocating-sys.patch"
+
+LDFLAGS:append:mipsarch = " -latomic"
