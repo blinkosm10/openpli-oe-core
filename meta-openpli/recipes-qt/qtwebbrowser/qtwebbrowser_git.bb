@@ -1,7 +1,7 @@
 SUMMARY = "Qt Touch-Friendly WebBrowser"
 HOMEPAGE = "http://blog.qt.io/blog/2016/07/18/qt-webbrowser-1-0/"
 SECTION = "multimedia"
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE = "GPL-3.0-only & GFDL-1.3"
 LIC_FILES_CHKSUM = " \
 file://LICENSE.GPLv3;md5=a40e2bb02b1ac431f461afd03ff9d1d6 \

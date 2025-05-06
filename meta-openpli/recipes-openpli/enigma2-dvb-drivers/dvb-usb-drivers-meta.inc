@@ -1,6 +1,6 @@
 require conf/license/openpli-gplv2.inc
 
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PACKAGES = "${PN}"
 ALLOW_EMPTY:${PN} = "1"

@@ -1,6 +1,6 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/qtwebkit-git:"
 # package is machine specific
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 DEPENDS += " libwebp qtsensors qtlocation patchelf-native"
 RDEPENDS:${PN} += " qtdeclarative qtsensors qtlocation"

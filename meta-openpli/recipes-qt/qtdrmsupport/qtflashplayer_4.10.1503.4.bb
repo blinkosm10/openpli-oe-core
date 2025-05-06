@@ -2,7 +2,7 @@ SUMMARY = "Flash pepper plugin Adobe"
 DESCRIPTION = "Install flash components for Qt"
 LICENSE = "CLOSED"
 DEPENDS = "qtwebengine"
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 SRC_URI = "file://libflashplayer-${PV}_armhf.zip"
 

@@ -1,5 +1,5 @@
 PR:append = ".2"
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 THISDIR := "${@os.path.dirname(d.getVar('FILE', True))}"
 FILESPATH =. "${@base_set_filespath(["${THISDIR}/${BPN}"], d)}:"

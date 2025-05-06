@@ -2,7 +2,7 @@ SUMMARY = "CDM pepper plugin Widevine"
 DESCRIPTION = "Install widevine components for Qt"
 LICENSE = "CLOSED"
 DEPENDS = "qtwebengine"
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 SRC_URI = "file://libwidevinecdm-${PV}_armhf.zip"
 
