@@ -10,6 +10,7 @@ SRC_URI_append_osmini4k = " file://0001-Add-initial-support-for-V4L2-mem2mem-dec
 SRC_URI_append_gbquad4k = " file://egl/kodi-old-gl-headers.patch"
 SRC_URI_append_gbue4k = " file://egl/kodi-old-gl-headers.patch"
 SRC_URI_append_gbtrio4k = " file://egl/kodi-old-gl-headers.patch"
+SRC_URI_append_gbtrio4kpro = " file://egl/kodi-old-gl-headers.patch"
 
 # meta-octagon
 SRC_URI_append_sf8008 = " file://egl/kodi-old-gl-headers.patch"

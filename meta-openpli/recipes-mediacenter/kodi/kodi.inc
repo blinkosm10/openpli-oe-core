@@ -22,6 +22,7 @@ LIC_FILES_CHKSUM ?= "file:///${WORKDIR}/git/LICENSE.md;md5=7b423f1c9388eae123332
 # in RDEPENDS_kodi? [file-rdeps]
 #
 INSANE_SKIP_${PN}_gbtrio4k += "file-rdeps"
+INSANE_SKIP_${PN}_gbtrio4kpro += "file-rdeps"
 #
 INSANE_SKIP_${PN}_sf8008 += "file-rdeps"
 INSANE_SKIP_${PN}_sf8008m += "file-rdeps"
