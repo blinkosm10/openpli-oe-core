@@ -10,7 +10,6 @@ do_install_append() {
 	rm ${D}${sysconfdir}/vsftpd.user_list
 }
 
-pkg_postinst_${PN}_append () {
-	# fix fakeroot issues on some boxes
-	chown root:root $D${sysconfdir}/vsftpd.conf
+pkg_postinst_ontarget_${PN} () {
+    chown root /etc/vsftpd.conf
 }
