@@ -1,5 +1,3 @@
-PV = "1.26.0"
+PV = "1.26.1"
 
-SRC_URI[sha256sum] = "707a8b687ff5fddcee5b02415e2ec9b71b4ac44d0b7aec3b477364ceecbf1ecf"
-
-LDFLAGS:append:mipsarch = " -latomic"
+SRC_URI[sha256sum] = "350a20b45b6655b6e10265430bdfbb3c436a96e9611b79caabef8f10abe570ea"

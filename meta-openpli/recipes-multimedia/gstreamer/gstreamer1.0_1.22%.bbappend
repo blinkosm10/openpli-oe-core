@@ -1,10 +1,8 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-PV = "1.26.0"
+PV = "1.26.1"
 
-SRC_URI[sha256sum] = "1b2ee4028010c25b776effa7c396c7e3e1861b60b9417e416f4914abcdff279f"
+SRC_URI[sha256sum] = "30a4c4a5e48345583eb596aa265d0f53c0feb93011d93a6aaa70dd6e3c519dc4"
 
 SRC_URI:append = " file://001-revert-use-new-gst-adapter-get-buffer.patch"
 SRC_URI:remove = "file://0005-allocator-Avoid-integer-overflow-when-allocating-sys.patch"
-
-LDFLAGS:append:mipsarch = " -latomic"

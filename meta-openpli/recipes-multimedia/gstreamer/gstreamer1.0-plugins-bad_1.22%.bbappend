@@ -1,8 +1,8 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-PV = "1.26.0"
+PV = "1.26.1"
 
-SRC_URI[sha256sum] = "f8287a84c5f66368a5a50da5f969994a02c47f20220ffe1ca3154193e65af216"
+SRC_URI[sha256sum] = "9b8415b1bb3726a499578fb39907952981716643f660215fe68628fbd8629197"
 
 SRC_URI:append = "file://001-rtmp-hls-tsdemux-fix.patch \
                   file://003-rtmp-fix-seeking-and-potential-segfault.patch \
@@ -13,5 +13,3 @@ PACKAGECONFIG = "${GSTREAMER_ORC} bz2 closedcaption curl dash dtls faac faad hls
 "
 
 EXTRA_OEMESON:remove = "-Dkate=disabled"
-
-LDFLAGS:append:mipsarch = " -latomic"
