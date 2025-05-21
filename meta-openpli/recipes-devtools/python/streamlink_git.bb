@@ -3,7 +3,7 @@ DESCRIPTION = "Streamlink is a command-line utility that pipes video streams fro
 HOMEPAGE = "https://github.com/streamlink/streamlink"
 SECTION = "devel/python"
 LICENSE = "BSD-2-Clause"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=bdeccdbc612afcae11e2a92dafa75e35"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=b026f0197dc4ce773b97e3dc1f55f55c"
 
 DEPENDS += "${PYTHON_PN}-versioningit-native ${PYTHON_PN}-importlib-metadata-native"
 
@@ -19,7 +19,7 @@ RDEPENDS_${PN} = "${PYTHON_PN}-core \
 	${PYTHON_PN}-pysocks \
 	${PYTHON_PN}-requests \
 	${PYTHON_PN}-shell \
-	${PYTHON_PN}-singledispatch \
+	${PYTHON_PN}-shell \
 	${PYTHON_PN}-websocket-client \
 "
 
