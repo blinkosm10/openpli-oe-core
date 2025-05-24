@@ -6,10 +6,13 @@ SRC_URI[sha256sum] = "b288b0c43871d919629d7e77846ef0b47f8eeaa9ebc9cedeee8233fc6c
 
 S = "${WORKDIR}/wireguard-tools-${PV}/src"
 
-inherit bash-completion systemd pkgconfig
+inherit bash-completion systemd pkgconfig update-rc.d
 
 DEPENDS = "libmnl"
 RDEPENDS_${PN} = "bash iproute2-ip kernel-module-wireguard openresolv"
+
+INITSCRIPT_NAME = "wg"
+INITSCRIPT_PARAMS = "defaults"
 
 do_install () {
     oe_runmake DESTDIR="${D}" PREFIX="${prefix}" SYSCONFDIR="${sysconfdir}" \
@@ -18,6 +21,9 @@ do_install () {
         WITH_BASHCOMPLETION=yes \
         WITH_WGQUICK=yes \
         install
+
+        install -d ${D}${sysconfdir}/init.d
+        install -m 755 ${WORKDIR}/wg ${D}${sysconfdir}/init.d/wg
 }
 
 FILES_${PN} = " \
