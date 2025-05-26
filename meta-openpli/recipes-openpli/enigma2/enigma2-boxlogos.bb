@@ -20,6 +20,8 @@ S = "${WORKDIR}/git"
 FILES:${PN} = "${datadir}/enigma2/logos/ ${libdir}/enigma2/python/Components/Renderer/"
 FILES:${PN}-src = "${libdir}/enigma2/python/Components/Renderer/*.py"
 
+do_install[depends] += "enigma-info:do_deploy"
+
 do_install() {
 	# make sure the enigma info file exists
 	INFOFILE=${DEPLOY_DIR_IMAGE}/../../enigma-info/${MACHINE}.txt
