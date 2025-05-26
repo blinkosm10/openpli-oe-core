@@ -29,7 +29,7 @@ check_interfaces() {
 status() {
     check_interfaces
     for interface in $interfaces; do
-        echo /usr/bin/wg show $interface
+        /usr/bin/wg show $interface
     done
 }
 
