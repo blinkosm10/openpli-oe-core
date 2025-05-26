@@ -1,3 +1,5 @@
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+
 SRC_URI += " file://wg-quick.patch;striplevel=2 file://wg"
 
 inherit update-rc.d
