@@ -42,7 +42,6 @@ FILES:${PN}-meta = "${datadir}/meta"
 PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 
 CFLAGS += "-I${STAGING_INCDIR}/tirpc"
-LDFLAGS += "-ltirpc"
 
 S = "${WORKDIR}/git"
 
