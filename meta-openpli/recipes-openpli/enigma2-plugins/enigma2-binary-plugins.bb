@@ -12,7 +12,7 @@ PACKAGES = "\
 	enigma2-binary-plugins \
 	"
 
-inherit gitpkgv python3native pkgconfig gettext python3targetconfig
+inherit autotools-brokensep gitpkgv python3native pkgconfig gettext python3targetconfig
 
 PV = "git"
 PKGV = "git${GITPKGV}"
@@ -44,8 +44,6 @@ PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 CFLAGS += "-I${STAGING_INCDIR}/tirpc"
 LDFLAGS += "-ltirpc"
 CXXFLAGS = " -std=c++11"
-
-inherit autotools-brokensep
 
 S = "${WORKDIR}/git"
 
