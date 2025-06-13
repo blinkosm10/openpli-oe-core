@@ -12,7 +12,7 @@ PACKAGES = "\
 	enigma2-binary-plugins \
 	"
 
-inherit autotools-brokensep gitpkgv python3native pkgconfig gettext python3targetconfig
+inherit autotools-brokensep gitpkgv pkgconfig gettext python3targetconfig
 
 PV = "git"
 PKGV = "git${GITPKGV}"
