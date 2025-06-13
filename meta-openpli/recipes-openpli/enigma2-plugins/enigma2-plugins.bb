@@ -29,7 +29,7 @@ PROVIDES += "\
 	${@bb.utils.contains("MACHINE_FEATURES", "transcoding","enigma2-plugin-systemplugins-transcodingsetup","",d)} \
 "
 
-inherit gitpkgv python3native pkgconfig gettext python3targetconfig autotools-brokensep allarch
+inherit gitpkgv pkgconfig gettext python3targetconfig autotools-brokensep allarch
 
 # needed to prevent autotools from running C compiler checks, which
 # fails in allarch (as there is no cross compiler for this ARCH !!
