@@ -20,18 +20,19 @@ RDEPENDS:${PN} = "python3-core \
 	python3-shell \
 	python3-singledispatch \
 	python3-websocket-client \
+	python3-trio \
 "
 
 inherit setuptools3 python3-dir python3-compileall gitpkgv
 
-PV = "6.8.3+git"
-PKGV = "6.8.3+git${GITPKGV}"
+PV = "7.4.0+git"
+PKGV = "7.4.0+git${GITPKGV}"
 
 SRCREV_plugins = "${AUTOREV}"
 SRCREV_FORMAT = "streamlink_plugins"
 
 SRC_URI = " git://github.com/streamlink/streamlink;protocol=https;branch=master \
-			git://github.com/oe-mirrors/streamlink-plugins;protocol=https;branch=master;name=plugins;destsuffix=additional-plugins \
+		git://github.com/oe-mirrors/streamlink-plugins;protocol=https;branch=master;name=plugins;destsuffix=additional-plugins \
 "
 
 S = "${WORKDIR}/git"
