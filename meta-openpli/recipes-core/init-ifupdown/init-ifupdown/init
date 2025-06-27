@@ -58,7 +58,7 @@ check_network_swap() {
 interfaces_up() {
 	while IFS=\  read AUTO IF; do
 		ifup $IF
-	done < <(grep auto /etc/network/interfaces)
+	done < <(grep -E "^auto \w" /etc/network/interfaces)
 }
 
 case "$1" in
