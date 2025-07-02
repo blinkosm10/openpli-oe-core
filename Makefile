@@ -75,6 +75,7 @@ BBLAYERS ?= \
 	$(CURDIR)/meta-uclan \
 	$(CURDIR)/meta-abcom \
 	$(CURDIR)/meta-qt5 \
+	$(CURDIR)/meta-lts-mixins \
 	$(CURDIR)/meta-clang
 
 CONFFILES = \
