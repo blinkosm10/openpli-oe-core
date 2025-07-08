@@ -7,6 +7,8 @@ require openplugins-replace-pli.inc
 
 require openplugins-distutils.inc
 
+RDEPENDS:${PN} = "util-linux-ionice"
+
 SRC_URI:append = " file://use-setuptools-instead-of-distutils.patch \
                    file://set-list-before-update.patch \
 "
