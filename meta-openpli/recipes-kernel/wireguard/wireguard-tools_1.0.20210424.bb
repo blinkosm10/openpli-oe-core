@@ -9,7 +9,8 @@ S = "${WORKDIR}/wireguard-tools-${PV}/src"
 inherit bash-completion systemd pkgconfig update-rc.d
 
 DEPENDS = "libmnl"
-RDEPENDS_${PN} = "bash iproute2-ip kernel-module-wireguard openresolv"
+RDEPENDS_${PN} = "bash iproute2-ip openresolv"
+RRECOMMENDS_${PN} = "kernel-module-wireguard"
 
 INITSCRIPT_NAME = "wg"
 INITSCRIPT_PARAMS = "defaults"
