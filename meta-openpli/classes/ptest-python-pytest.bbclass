@@ -18,7 +18,7 @@ do_install_ptest() {
 	# 
 	# Users can override this behavior by simply including a
 	# custom script (run-ptest) in the source file list
-	if [ ! -f "${UNPACKDIR}/run-ptest" ]; then
+	if [ ! -f "${WORKDIR}/run-ptest" ]; then
 		cat > ${D}${PTEST_PATH}/run-ptest << EOF
 #!/bin/sh
 pytest --automake
