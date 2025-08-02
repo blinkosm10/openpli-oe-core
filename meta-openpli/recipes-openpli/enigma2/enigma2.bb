@@ -38,7 +38,7 @@ RRECOMMENDS:${PN} = " \
 	enigma2-plugin-skins-e2darkos \
 	hotplug-e2-helper \
 	python3-sendfile \
-	ofgwrite \
+	${@bb.utils.contains("MACHINE", "dm8000", "", "ofgwrite", d)} \
 	virtual-enigma2-mediaservice \
 	"
 
