@@ -68,9 +68,12 @@ PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 S = "${WORKDIR}/git"
 
 DEPENDS = " \
+	bluez5 \
+	btinit \
 	python3-pyopenssl \
 	streamripper \
 	python3-mutagen \
+	python3-pexpect \
 	python3-requests \
 	python3-six \
 	python3-treq \

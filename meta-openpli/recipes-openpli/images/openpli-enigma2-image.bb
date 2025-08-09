@@ -54,6 +54,7 @@ ENIGMA2_PLUGINS += " \
 	${@bb.utils.contains('MACHINE_FEATURES', 'ci', 'enigma2-plugin-systemplugins-commoninterfaceassignment', '', d)} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'dvd', 'enigma2-plugin-extensions-cdinfo enigma2-plugin-extensions-dvdplayer', '', d)} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'tempfancontrol', 'enigma2-plugin-systemplugins-tempfancontrol', '', d)} \
+	${@bb.utils.contains('MACHINE_FEATURES', 'inibt', 'enigma2-plugin-extensions-btdevicesmanager', '', d)} \
 	"
 
 DEPENDS += " \
