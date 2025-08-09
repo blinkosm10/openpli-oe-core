@@ -68,18 +68,16 @@ PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 S = "${WORKDIR}/git"
 
 DEPENDS = " \
+	bluez5 \
+	btinit \
 	${PYTHON_PN}-pyopenssl \
 	streamripper \
-	${PYTHON_PN}-icalendar \
-	${PYTHON_PN}-dateutil \
 	${PYTHON_PN}-mutagen \
-	${PYTHON_PN}-pyusb \
+	${PYTHON_PN}-pexpect \
 	${PYTHON_PN}-requests \
-	${PYTHON_PN}-simplejson \
-	${PYTHON_PN}-six-native \
+	${PYTHON_PN}-six \
 	${PYTHON_PN}-treq \
 	${PYTHON_PN}-twisted \
-	${PYTHON_PN}-daap \
 	libcddb \
 	pydpflib \
 	dvdbackup \
