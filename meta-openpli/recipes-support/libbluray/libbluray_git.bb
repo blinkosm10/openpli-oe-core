@@ -7,10 +7,10 @@ LIC_FILES_CHKSUM="file://COPYING;md5=435ed639f84d4585d93824e7da3d85da"
 DEPENDS = "freetype fontconfig libxml2 libudfread"
 
 # make the origin overridable from OE config, for local mirroring
-SRC_ORIGIN ?= "git://github.com/ShiftMediaProject/libbluray.git;branch=master;protocol=https"
+SRC_ORIGIN ?= "gitsm://code.videolan.org/videolan/libbluray.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-inherit gittag autotools pkgconfig
+inherit gittag meson pkgconfig
 
 PV = "git${SRCPV}"
 PKGV = "${GITPKGVTAG}"
