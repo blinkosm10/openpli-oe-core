@@ -10,7 +10,7 @@ DEPENDS = "freetype fontconfig libxml2 libudfread"
 SRC_ORIGIN ?= "gitsm://code.videolan.org/videolan/libbluray.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-inherit gittag meson pkgconfig
+inherit gittag autotools pkgconfig
 
 PV = "git${SRCPV}"
 PKGV = "${GITPKGVTAG}"
