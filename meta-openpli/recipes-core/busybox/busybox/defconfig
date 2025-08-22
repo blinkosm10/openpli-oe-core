@@ -1018,7 +1018,7 @@ CONFIG_FEATURE_MIME_CHARSET=""
 #
 # Process Utilities
 #
-CONFIG_FREE=y
+# CONFIG_FREE is not set
 CONFIG_FUSER=y
 # CONFIG_IOSTAT is not set
 CONFIG_KILL=y
