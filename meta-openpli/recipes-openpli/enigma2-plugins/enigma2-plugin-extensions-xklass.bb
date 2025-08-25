@@ -7,12 +7,12 @@ RDEPENDS:${PN} = "python3 python3-multiprocessing python3-requests \
                   python3-image python3-imaging python3-pillow wget \
 "
 
-inherit gitpkgv allarch python3-compileall
+inherit gittag allarch python3-compileall
 
 SRCREV = "${AUTOREV}"
 
 PV = "git"
-PKGV = "${GITPKGV}"
+PKGV = "${GITPKGVTAG}"
 
 SRC_URI = "git://github.com/kiddac/XKlass.git;protocol=https;branch=master"
 

@@ -3,12 +3,12 @@ MAINTAINER = "kiddac"
 require conf/license/license-gplv2.inc
 HOMEPAGE = "https://github.com/kiddac/Jedi_Maker_Xtream"
 
-inherit gitpkgv allarch python3-compileall
+inherit gittag allarch python3-compileall
 
 SRCREV="${AUTOREV}"
 
 PV = "git"
-PKGV = "git${GITPKGV}"
+PKGV = "${GITPKGVTAG}"
 
 SRC_URI = "git://github.com/WanWizard/Jedi_Maker_Xtream.git;protocol=https;branch=master"
 

@@ -3,10 +3,10 @@ MAINTAINER = "kiddac"
 require conf/license/license-gplv2.inc
 HOMEPAGE = "https://github.com/kiddac/Jedi-EPG-XStream"
 
-inherit gitpkgv allarch python3-compileall
+inherit gittag allarch python3-compileall
 
 PV = "git"
-PKGV = "git${GITPKGV}"
+PKGV = "${GITPKGVTAG}"
 
 SRC_URI = "git://github.com/kiddac/Jedi-EPG-XStream.git;protocol=https;branch=main \
            file://get-rid-of-fuzzywuzzy.patch \

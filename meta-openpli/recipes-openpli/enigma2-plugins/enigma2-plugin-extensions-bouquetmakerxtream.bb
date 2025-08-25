@@ -8,7 +8,7 @@ require conf/license/license-gplv2.inc
 SRCREV="${AUTOREV}"
 
 PV = "git"
-PKGV = "${GITPKGV}"
+PKGV = "${GITPKGVTAG}"
 
 inherit gittag allarch
 
