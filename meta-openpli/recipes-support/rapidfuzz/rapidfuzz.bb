@@ -8,10 +8,10 @@ SRC_URI="git://github.com/rapidfuzz/rapidfuzz;branch=main;protocol=https"
 
 S = "${WORKDIR}/git"
 
-inherit gitpkgv pkgconfig scikit-build-core
+inherit gittag pkgconfig scikit-build-core
 
-PV = "3.12.2.+git"
-PKGV = "3.12.2+git${GITPKGV}"
+PV = "git"
+PKGV = "${GITPKGVTAG}"
 
 do_install:append() {
     rm -rf ${D}${PYTHON_SITEPACKAGES_DIR}/*.dist-info
