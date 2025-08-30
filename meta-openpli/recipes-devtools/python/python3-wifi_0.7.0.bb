@@ -9,11 +9,11 @@ inherit gitpkgv
 
 PV = "0.7.0+git${SRCPV}"
 PKGV = "0.7.0+git${GITPKGV}"
-PR = "r2"
+PR = "r3"
 
 RDEPENDS_${PN} = "python3-ctypes python3-datetime python3-six"
 
-SRC_URI = "git://github.com/athoik/pythonwifi.git"
+SRC_URI = "git://github.com/openpli/pythonwifi.git"
 SRCREV ?= "${AUTOREV}"
 
 S = "${WORKDIR}/git"
