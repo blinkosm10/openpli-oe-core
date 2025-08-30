@@ -9,11 +9,11 @@ inherit gitpkgv setuptools3
 
 PV = "0.7.0+git"
 PKGV = "0.7.0+git${GITPKGV}"
-PR = "r2"
+PR = "r3"
 
 RDEPENDS:${PN} = "python3-ctypes python3-datetime python3-six"
 
-SRC_URI = "git://github.com/athoik/pythonwifi.git;branch=master;protocol=https \
+SRC_URI = "git://github.com/openpli/pythonwifi.git;branch=master;protocol=https \
            file://replace-distutils-with-setuptools.patch \
 	"
 SRCREV ?= "${AUTOREV}"
