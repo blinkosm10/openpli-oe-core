@@ -125,9 +125,6 @@ IMAGE_INSTALL += " \
 	\
 	${@bb.utils.contains_any('MACHINE', 'vuuno4k vuuno4kse vusolo4k vuultimo4k vuduo4k vuduo4kse', 'enigma2-plugin-systemplugins-fastchannelchange', '', d)} \
 	\
-	${@bb.utils.contains_any('MACHINE', 'gbquad4k gbue4k', 'kernel-module-88xxau', '', d)} \
-	${@bb.utils.contains_any('MACHINE', 'gbquad4k gbue4k', 'enigma2-plugin-systemplugins-wirelesslan', '', d)} \
-	\
 	${@bb.utils.contains("MACHINE_FEATURES", "chromium", "enigma2-plugin-extensions-chromium", "", d)} \
 	${@bb.utils.contains("MACHINE_FEATURES", "transcoding", "enigma2-plugin-systemplugins-transcodingsetup", "", d)} \
 	${@bb.utils.contains("MACHINE_FEATURES", "streamproxy", "streamproxy", "", d)} \
