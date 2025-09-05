@@ -46,7 +46,6 @@ SRC_URI += " \
 
 FILES_${PN}-base += " \
                     ${sysconfdir}/samba/smb.conf \
-                    ${sysconfdir}/samba/smb-secure.conf \
                     ${sysconfdir}/samba/shares/share.template \
                     ${sysconfdir}/init.d/samba.sh \
                     ${bindir}/testparm \
@@ -96,7 +95,6 @@ do_install_append() {
 	install -m 644 ${WORKDIR}/pam.config ${D}${sysconfdir}/pam.d/samba
 	install -d ${D}${sysconfdir}/samba
 	install -m 644 ${WORKDIR}/smb.conf ${D}${sysconfdir}/samba
-	install -m 644 ${WORKDIR}/smb-secure.conf ${D}${sysconfdir}/samba
 	install -m 644 ${WORKDIR}/smb-user.conf ${D}${sysconfdir}/samba
 	touch ${D}${sysconfdir}/samba/smb-shares.conf
 	install -m 755 ${WORKDIR}/samba.sh ${D}${sysconfdir}/init.d
