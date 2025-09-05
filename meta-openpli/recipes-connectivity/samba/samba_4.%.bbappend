@@ -33,7 +33,6 @@ EXTRA_OECONF_remove = " \
 
 SRC_URI += " \
            file://smb.conf \
-           file://smb-secure.conf \
            file://smb-user.conf \
            file://pam.config \
            file://samba.sh \
