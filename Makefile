@@ -135,6 +135,10 @@ feed: init
 	@echo 'Building feed for $(MACHINE)'
 	@. $(TOPDIR)/env.source && cd $(TOPDIR) && bitbake openpli-enigma2-feed
 
+static-feed: init
+	@echo 'Building feed for $(MACHINE)'
+	@. $(TOPDIR)/env.source && cd $(TOPDIR) && bitbake openpli-enigma2-static-feed
+
 update:
 	@echo 'Updating Git repositories...'
 	@HASH=`$(XSUM) $(MAKEFILE_LIST)`; \
