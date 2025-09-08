@@ -41,6 +41,7 @@ SRC_URI:remove = "file://0001-qt-include-ext-qt-gstqtgl.h-instead-of-gst-gl-gstg
                   file://0029-wavparse-Check-that-at-least-32-bytes-are-available-.patch \
                   file://0030-wavparse-Fix-clipping-of-size-to-the-file-size.patch \
                   file://0031-wavparse-Check-size-before-reading-ds64-chunk.patch \
+                  file://CVE-2025-47183-001.patch \
 "
 
 PACKAGECONFIG = "${GSTREAMER_ORC} amrnb amrwb bz2 cairo flac gdk-pixbuf gudev jpeg lame libpng \
