@@ -1,8 +1,8 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-PV = "1.26.1"
+PV = "1.26.5"
 
-SRC_URI[sha256sum] = "fcdcb2f77620a599557b2843d1c6c55c2b660f5fc28222b542847d11d9ca982f"
+SRC_URI[sha256sum] = "eb0862e93404b073e98ec50350ece7e6685ea2936cab8118c2b8e938e2cbea8b"
 
 DEPENDS:append = " libsoup-2.4"
 RDEPENDS:${PN}-soup += "libsoup-2.4"
@@ -42,6 +42,8 @@ SRC_URI:remove = "file://0001-qt-include-ext-qt-gstqtgl.h-instead-of-gst-gl-gstg
                   file://0030-wavparse-Fix-clipping-of-size-to-the-file-size.patch \
                   file://0031-wavparse-Check-size-before-reading-ds64-chunk.patch \
                   file://CVE-2025-47183-001.patch \
+                  file://CVE-2025-47183-002.patch \
+                  file://CVE-2025-47219.patch \
 "
 
 PACKAGECONFIG = "${GSTREAMER_ORC} amrnb amrwb bz2 cairo flac gdk-pixbuf gudev jpeg lame libpng \
