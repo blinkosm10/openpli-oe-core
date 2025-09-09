@@ -21,14 +21,13 @@ OPTIONAL_BSP_ENIGMA2_PACKAGES ?= ""
 inherit linux-kernel-base
 KERNEL_VERSION = "${@get_kernelversion_headers('${STAGING_KERNEL_DIR}') or oe.utils.read_file('${STAGING_KERNEL_BUILDDIR}/kernel-abiversion') or oe.utils.read_file('${PKGDATA_DIR}/kernel-depmod/kernel-abiversion')}"
 
-OPTIONAL_PACKAGES += " \
-	${@bb.utils.contains('TARGET_ARCH', 'mipsel', '', 'nodejs', d)} \
-	"
+#OPTIONAL_PACKAGES += " \
+#	${@bb.utils.contains('TARGET_ARCH', 'mipsel', '', 'nodejs', d)} \
+#	"
 
-OPTIONAL_ENIGMA2_PACKAGES = " \
-	${@"" and bb.utils.contains('OPENPLI_FEATURES', 'kodi', 'enigma2-plugin-extensions-kodi kodi-addons-meta', '', d)} \
-	${@"" and bb.utils.contains('MACHINE_FEATURES', 'kodi', 'enigma2-plugin-extensions-kodi kodi-addons-meta', '', d)} \
-	\
+OPTIONAL_ENIGMA2_PACKAGES += " \
+	${@bb.utils.contains('OPENPLI_FEATURES', 'kodi', 'enigma2-plugin-extensions-kodi kodi-addons-meta', '', d)} \
+	${@bb.utils.contains('MACHINE_FEATURES', 'kodi', 'enigma2-plugin-extensions-kodi kodi-addons-meta', '', d)} \
 	${@bb.utils.contains('OPENPLI_FEATURES', 'qtplugins', 'enigma2-plugin-extensions-qthbbtv enigma2-plugin-extensions-qtstalker', '', d)} \
 	${@bb.utils.contains("MACHINE_FEATURES", "webkithbbtv", "enigma2-plugin-extensions-webkithbbtv", "", d)} \
 	${@bb.utils.contains("MACHINE_FEATURES", "chromiumos", "enigma2-plugin-extensions-chromium", "", d)} \
