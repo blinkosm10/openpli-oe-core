@@ -4,10 +4,10 @@ LIC_FILES_CHKSUM = "file://src/LICENSE;md5=c644709e9dad24bd9bf90ac96687ed2f"
 
 RDEPENDS:${PN} = "${PYTHON_PN}-requests"
 
-inherit gittag allarch gettext setuptools3-openplugins python3-compileall
+inherit gitpkgv allarch gettext setuptools3-openplugins python3-compileall
 
-PV = "git"
-PKGV = "${GITPKGVTAG}"
+PV = "1.1+git"
+PKGV = "1.1+git${GITPKGV}"
 
 SRCREV = "${AUTOREV}"
 
