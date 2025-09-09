@@ -21,10 +21,10 @@ FILES:${PN}-dbg = " \
 
 PYPI_PACKAGE = "treq"
 
-SRC_URI[md5sum] = "a48996ff540651deded304b638ba54ea"
-SRC_URI[sha256sum] = "15da7fc404f3e4ed59d0abe5f8eef4966fabbe618039a2a23bc7c15305cefea8"
+SRC_URI[md5sum] = "b0a3c2e315375388e820019afc59919d"
+SRC_URI[sha256sum] = "25dde3a55ae85ec2f2c56332c99aef255ab14f997d0d00552ebff13538a9804a"
 
-inherit pypi setuptools3
+inherit pypi python_hatchling
 
 include python3-package-split.inc
 
