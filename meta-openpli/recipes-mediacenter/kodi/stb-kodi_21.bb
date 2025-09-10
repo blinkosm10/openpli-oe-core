@@ -78,17 +78,17 @@ PR = "r0"
 
 PV = "21.0+gitr"
 PV_groovy = "4.0.18"
-PV_commons-lang3 = "3.16.0"
-PV_commons-text = "1.12.0"
+PV_commons-lang3 = "3.18.0"
+PV_commons-text = "1.14.0"
 
 SRC_URI[groovy.sha256sum] = "4b03aa472ec7848d272893348a656be05d1b3502b30770ea57efa158e61154a6"
-SRC_URI[commons-lang.sha256sum] = "0c97775a9e8a37b1e4cfd0993ad27c28bf6fc2611857a80ff5769805cea53a0a"
-SRC_URI[commons-text.sha256sum] = "265a149c7e0c1ebfe019bbe0226f8c1f6474811054d459145510ea2eed93a11a"
+SRC_URI[commons-lang.sha256sum] = "add5f9cd656437515d19c8af46058322f9bbc337591a811027f706df84ee5b14"
+SRC_URI[commons-text.sha256sum] = "2a9684d659f08739a529dcd4241a827ca8ae893b736d1bbcee1b099cd9738820"
 
 SRC_URI = "git://github.com/xbmc/xbmc.git;protocol=https;branch=Omega \
            https://archive.apache.org/dist/groovy/${PV_groovy}/distribution/apache-groovy-binary-${PV_groovy}.zip;name=groovy \
-           https://mirrors.huaweicloud.com/apache/commons/lang/binaries/commons-lang3-${PV_commons-lang3}-bin.tar.gz;name=commons-lang \
-           https://mirrors.huaweicloud.com/apache/commons/text/binaries/commons-text-${PV_commons-text}-bin.tar.gz;name=commons-text \
+           https://dlcdn.apache.org/commons/lang/binaries/commons-lang3-${PV_commons-lang3}-bin.tar.gz;name=commons-lang \
+           https://dlcdn.apache.org/commons/text/binaries/commons-text-${PV_commons-text}-bin.tar.gz;name=commons-text \
            file://0001-flatbuffers-21.patch \
            file://0002-readd-Touchscreen-settings.patch \
            file://0003-shader-nopow-21.patch \
