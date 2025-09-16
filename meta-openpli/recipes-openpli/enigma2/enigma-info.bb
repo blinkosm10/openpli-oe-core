@@ -617,6 +617,14 @@ elif [ "$MACHINE" = "ustym4kpro" ]; then
 		updateinfo "displaymodel" "Ustym 4K Twin"
 		updateinfo "machinebuild" "ustym4ktwin"
 	fi
+
+# runtime fixes for the Gigablue Trio 4K PRO
+elif [ "$MACHINE" = "gbtrio4k" ]; then
+	if [ -d /sys/module/uwe5621_wifi ]; then
+		updateinfo "displaymodel" "UHD TRIO 4K PRO"
+		updateinfo "model" "gbtrio4kpro"
+		updateinfo "machinebuild" "gbtrio4kpro"
+	fi
 fi
 
 # re-add the checksum
