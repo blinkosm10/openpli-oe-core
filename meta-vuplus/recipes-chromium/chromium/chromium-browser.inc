@@ -1,0 +1,41 @@
+DESCRIPTION = "Chromium and YoutubeTV"
+SECTION = "base"
+PRIORITY = "required"
+LICENSE = "CLOSED"
+
+PV = "1.2"
+PR = "${SRCDATE}"
+SRC_URI = "http://downloads.openpli.org/archive/vuplus/chromium-vuplus_${MACHINE}_${SRCDATE}.tar.gz"
+
+# Added to support the OE-Alliance.
+#PREFERRED_VERSION_nss = "3.17.3"
+
+#DEPENDS = "nss libxslt"
+RDEPENDS:${PN} = "libcrypto-compat nspr nss libxslt libudev libcurl"
+
+do_install() {
+	install -d ${D}/usr/local/chromium
+	cp -afR --no-preserve=ownership ${WORKDIR}/chromium/* ${D}/usr/local/chromium/
+	chmod 755 ${D}/usr/local/chromium/run.sh
+	chmod 755 ${D}/usr/local/chromium/bin/browser_shell
+	chmod 755 ${D}/usr/local/chromium/bin/chrome
+	chmod 755 ${D}/usr/local/chromium/bin/chrome-sandbox
+	chmod 755 ${D}/usr/local/chromium/bin/goexit
+	# patch chrome for libudev.so.1
+	sed -i 's/libudev.so.0/libudev.so.1/g' ${D}/usr/local/chromium/bin/chrome
+	sed -i 's/libudev.so.0/libudev.so.1/g' ${D}/usr/local/chromium/bin/browser_shell
+}
+
+do_package_qa() {
+}
+
+#PROVIDES += "chromium-browser"
+#RPROVIDES:${PN} += "chromium-browser"
+
+PACKAGE_ARCH = "${MACHINE_ARCH}"
+
+FILES:${PN} = "/"
+
+INHIBIT_PACKAGE_STRIP = "1"
+
+INSANE_SKIP:${PN} = "already-stripped"
