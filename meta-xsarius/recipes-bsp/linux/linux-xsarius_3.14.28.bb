@@ -25,6 +25,7 @@ SRC_URI = "http://downloads.openpli.org/archive/xsarius/linux-${KV}.tar.xz \
 	file://make-yyloc-declaration-extern.patch \
 	file://fix-build-binutils241.patch \
 	file://fix-linker-issue-undefined-reference.patch \
+	file://kernel-add-support-for-gcc13.patch \
 	file://defconfig \
 	"
 

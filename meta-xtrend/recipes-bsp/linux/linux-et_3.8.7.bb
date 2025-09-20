@@ -65,6 +65,7 @@ SRC_URI = "http://downloads.openpli.org/archive/xtrend/linux-${PV}-${ARCH}.tar.g
 	file://add-attributes-fix-modules-compile.patch \
 	file://makefile-silence-warnings.patch \
 	file://fix-build-with-binutils3-2.41.patch \
+	file://kernel-add-support-for-gcc13.patch \
 	"
 
 S = "${WORKDIR}/linux-${PV}"

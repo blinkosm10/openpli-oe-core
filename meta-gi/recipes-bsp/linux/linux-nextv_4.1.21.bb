@@ -24,8 +24,9 @@ SRC_URI += "http://downloads.openpli.org/archive/gi/linux-${PV}.tar.xz \
 	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
-	file://defconfig \
 	file://fix-build-with-binutils-2.41.patch \
+	file://kernel-add-support-for-gcc13.patch \
+	file://defconfig \
 	"
 
 inherit kernel machine_kernel_pr

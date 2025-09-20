@@ -29,8 +29,9 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KV}.tar.bz2 \
 	file://2-2-stv090x-on-tuning-lock-return-correct-tuned-paramaters-like-freq-sr-fec-rolloff-etc.patch \
 	file://add-attributes-fix-modules-compile.patch \
 	file://makefile-silence-warnings.patch \
-	file://defconfig \
+	file://kernel-add-support-for-gcc13.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://defconfig \
 	"
 
 inherit kernel machine_kernel_pr

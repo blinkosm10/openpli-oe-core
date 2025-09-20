@@ -30,6 +30,7 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KSRC_VER}.tar
 	file://0006-makefile-disable-warnings.patch \
 	file://0019-fix-build-binutils241.patch \
 	file://fix-linker-issue-undefined-reference.patch \
+	file://kernel-add-support-for-gcc13.patch \
 	file://defconfig \
 	"
 
