@@ -45,6 +45,7 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KSRC_VER}.tar
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
 	file://0004-make-yyloc-declaration-extern.patch \
+	file://kernel-add-support-for-gcc13.patch \
 	file://defconfig \
 	"
 

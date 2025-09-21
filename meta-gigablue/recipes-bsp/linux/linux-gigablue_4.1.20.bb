@@ -58,6 +58,7 @@ SRC_URI += "http://downloads.openpli.org/archive/gigablue/gigablue-linux-${PV}-$
     file://0003-uaccess-dont-mark-register-as-const.patch \
     file://make-yyloc-declaration-extern.patch \
     file://fix-build-with-binutils-2.41.patch \
+    file://kernel-add-support-for-gcc13.patch \
 "
 
 S = "${WORKDIR}/linux-${PV}"

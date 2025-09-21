@@ -30,6 +30,7 @@ SRC_URI += "http://downloads.openpli.org/archive/miraclebox/ceryon-linux-${PV}.t
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://kernel-add-support-for-gcc13.patch \
 	"
 
 S = "${WORKDIR}/linux-${PV}"
