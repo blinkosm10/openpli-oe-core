@@ -1,4 +1,4 @@
-sSUMMARY = "GUI frontend for Open Source Linux based receivers"
+SUMMARY = "GUI frontend for Open Source Linux based receivers"
 DESCRIPTION = "Enigma2 is a framebuffer based frontend for DVB functions on Linux settop boxes"
 MAINTAINER = "OpenPLi team <info@openpli.org>"
 LICENSE = "GPL-2.0-only"
