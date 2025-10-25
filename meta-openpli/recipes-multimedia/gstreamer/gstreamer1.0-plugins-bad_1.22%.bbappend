@@ -7,7 +7,9 @@ SRC_URI[sha256sum] = "9890f262f3b2a9564dcb629e9eb697d77b93d1f71897eda1a8170b7dcf
 SRC_URI:append = "file://001-rtmp-hls-tsdemux-fix.patch \
                   file://003-rtmp-fix-seeking-and-potential-segfault.patch \
 "
-
+SRC_URI:remove = "file://CVE-2025-3887-1.patch \
+                  file://CVE-2025-3887-2.patch \
+"
 PACKAGECONFIG = "${GSTREAMER_ORC} bz2 closedcaption curl dash dtls faac faad hls openssl opusparse \
                  rsvg rtmp sbc smoothstreaming sndfile ttml uvch264 webp \
 "
