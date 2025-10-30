@@ -12,7 +12,7 @@ SRCDATE = "20230530"
 PV = "${SRCDATE}"
 PR = "r4"
 
-SRC_URI  = "http://downloads.openpli.org/archive/gigablue/${MACHINE}-hciattach-${SRCDATE}.tar.gz \
+SRC_URI  = "http://downloads.openpli.org/archive/gigablue/gbtrio4kpro-hciattach-${SRCDATE}.tar.gz \
             file://${INITSCRIPT_NAME} \
 "
 
