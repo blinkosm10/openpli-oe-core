@@ -1,10 +1,10 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-PV = "0.23.15"
+PV = "0.24.6"
 
 DEPENDS:remove = "boost"
 
-SRCREV = "b8bfc986181a6824b7ee9c4f2c475369ca8ac931"
+SRCREV = "c426749d4709e8d4ec4a6808c004625fae37b60d"
 
 SRC_URI += " \
         file://mpd.conf \
