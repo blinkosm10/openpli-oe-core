@@ -2,6 +2,8 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 PV = "0.23.15"
 
+DEPENDS:remove = "boost"
+
 SRCREV = "b8bfc986181a6824b7ee9c4f2c475369ca8ac931"
 
 SRC_URI += " \
