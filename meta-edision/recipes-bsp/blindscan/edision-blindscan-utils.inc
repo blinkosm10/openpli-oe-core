@@ -30,4 +30,3 @@ do_install() {
 	install -m 0755 ${S}/${BLINDSCANARCH}/tda1002x ${D}${bindir}
 	install -m 0755 ${S}/${BLINDSCANARCH}/blindscan ${D}${bindir}
 }
-
