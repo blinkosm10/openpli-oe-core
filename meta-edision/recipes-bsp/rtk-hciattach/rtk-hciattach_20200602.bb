@@ -17,3 +17,5 @@ do_install() {
     install -d ${D}${bindir}
     install -m 755 ${S}/rtk_hciattach ${D}${bindir}
 }
+
+INSANE_SKIP:${PN} += "ldflags"
