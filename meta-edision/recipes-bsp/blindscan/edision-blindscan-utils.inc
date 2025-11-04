@@ -22,10 +22,12 @@ BLINDSCANARCH:mipsel = "mipsel-linux-gnu"
 FILES:edision-blindscan-dvbs-utils-${MACHINE} = "${bindir}/blindscan"
 FILES:edision-blindscan-dvbc-utils-${MACHINE} = "${bindir}/tda1002x"
 
-INSANE_SKIP:${PN} += "already-stripped"
+INSANE_SKIP:${PN} = "already-stripped"
+INSANE_SKIP = "ldflags"
 
 do_install() {
 	install -d ${D}${bindir}
 	install -m 0755 ${S}/${BLINDSCANARCH}/tda1002x ${D}${bindir}
 	install -m 0755 ${S}/${BLINDSCANARCH}/blindscan ${D}${bindir}
 }
+
