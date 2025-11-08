@@ -55,7 +55,8 @@ BBLAYERS ?= \
 	$(CURDIR)/meta-dream \
 	$(CURDIR)/meta-vuplus \
 	$(CURDIR)/meta-lts-mixins \
-	$(CURDIR)/meta-clang
+	$(CURDIR)/meta-clang \
+    $(CURDIR)/meta-qt5
 
 CONFFILES = \
 	$(TOPDIR)/env.source \
