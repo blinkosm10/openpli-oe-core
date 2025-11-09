@@ -6,6 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 DEPENDS = " \
 	avahi \
+    curl \
 	freetype \
 	gettext-native \
 	jpeg \
@@ -25,6 +26,7 @@ RDEPENDS:${PN} = " \
 	alsa-conf \
 	enigma2-fonts \
 	enigma-info \	
+    oe-alliance-branding \
 	ethtool \
 	${PYTHON_RDEPS} \
 	"
