@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 DEPENDS = " \
 	avahi \
-    curl \
+	curl \
 	freetype \
 	gettext-native \
 	jpeg \
@@ -26,7 +26,7 @@ RDEPENDS:${PN} = " \
 	alsa-conf \
 	enigma2-fonts \
 	enigma-info \	
-    oe-alliance-branding \
+	oe-alliance-branding \
 	ethtool \
 	${PYTHON_RDEPS} \
 	"
@@ -40,7 +40,6 @@ RRECOMMENDS:${PN} = " \
 	enigma2-plugin-skins-e2darkos \
 	hotplug-e2-helper \
 	${@bb.utils.contains("MACHINE", "dm8000", "", "ofgwrite", d)} \
-	virtual-enigma2-mediaservice \
 	"
 
 RRECOMMENDS:${PN}:append:libc-glibc = " glibc-gconv-utf-16"
